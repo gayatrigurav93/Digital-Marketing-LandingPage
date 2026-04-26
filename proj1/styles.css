@@ -1,0 +1,276 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:"Segoe UI", Arial, sans-serif;
+
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+.hero
+{padding: 160px 20px;
+background: linear-gradient(135deg, #1d5bbf, #6fb1ff);
+}
+ .hero h1{color:white;
+text-align:center;
+font-size:2.5rem;
+}
+ .hero p{color:white;
+text-align:center;
+font-size:1.5rem;}
+
+.cta-buttons{margin-top:20px;
+display:flex;
+justify-content:center;
+gap:50px;
+
+}
+.cta-buttons button{display:inline-block;
+background-color:blue;
+color:white;
+border:1px solid lightblue;
+border-radius:5px;
+padding:10px 30px;
+font-size: 1rem;
+cursor: pointer;
+transition: 0.5s ease;
+}
+
+.cta-buttons button:hover {background-color:white;
+color:blue;
+}
+ /* about section*/
+.about{color:blue;
+background-color: #fff;
+padding: 80px 30px;
+text-align:center;
+}
+
+.about h2{font-size:2rem;
+color:blue;}
+
+.about p{font-size:1.5rem;
+color:black;}
+
+.services-icons{
+margin:20px 120px;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+.services-icons div{
+display:flex;
+flex-direction:column;
+background-color:#1d5bbf;
+color:white;
+margin:20px;
+padding:30px 40px;
+align-items:center;
+box-shadow: 4px 4px 5px lightblue;
+transition: 0.5s ease;
+}
+
+.services-icons div:hover{background-color:white;
+color:blue;}
+
+
+/* service section */
+
+.services {
+background-color: #1d5bbf;
+background-repeat:no-repeat;
+padding:70px 30px;
+text-align:center;}
+
+.services h2{color:white;
+font-size:2rem;
+margin-bottom:20px;
+}
+
+
+
+.service-cards{display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;}
+
+
+.service-cards div {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.service-cards div:hover{color:blue;
+border-top: 1px solid blue;
+transform: scale(1.05);
+box-shadow: 4px 4px 6px lightblue;}
+.service-cards div p{font-size:1rem;
+border-top: 1px solid gray;}
+
+
+/* Our Work Section */
+.work {
+  padding: 60px 20px;
+  background: white;
+  text-align: center;
+}
+
+.work h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* layout */
+.work-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* important for mobile */
+}
+
+/* card */
+.work-card {
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden; /* important */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background: white;
+  transition: 0.3s;
+}
+
+.work-card:hover {
+  transform: translateY(-8px);
+}
+
+/* image */
+.work-card img {
+  width: 100%;
+  height: 100px;   /* fixed height */
+  object-fit: cover;
+display:block;
+}
+
+/* title */
+.work-item {
+  background: #1f5fbf;
+  color: #fff;
+  padding: 12px;
+  font-weight: 600;
+}
+
+
+/* why choose us section */
+
+.why-choose-us {
+  background: #f4f7fb;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.why-choose-us h2 {
+  font-size: 28px;
+  color: #1d3b6d;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.feature-box {
+  background: #ffffff;
+  padding: 25px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  background: #e6efff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.icon .material-icons {
+  font-size: 32px;
+  color: #1d3b6d;
+}
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  background: #1d5bbf;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #154a9c;
+}
+
+
+/*footer section*/
+.footer{background-color: #154a9c;
+padding:50px;
+color:white;
+text-align:center;
+justify-content:center;
+align-items:center;
+}
+
+.footer h2{font-size:30px;
+}
+.footer button{
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  background-color:lightblue;
+  color: blue;
+  text-decoration: none;
+   border:1px solid lightblue;
+font-size:15px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.footer button:hover {background-color:white;}
+
+
+/*responsive layout*/
+
+@media (max-width: 768px) {
+  .service-cards,.features{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .service-cards,.features {
+    grid-template-columns: 1fr;
+  }
+}
